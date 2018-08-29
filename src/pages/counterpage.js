@@ -10,8 +10,9 @@ class Counterpage extends React.Component {
 
     return (
     <div>
+      <Link to="/">Go back to the homepage</Link>
        <h1>Counter</h1>
-       <p>current count: {this.state.count}</p>
+       <h1>current count: {this.state.count}</h1>
        <button onClick={() => this.setState(prevState => ({
        count: prevState.count +1,
         }))
@@ -22,6 +23,8 @@ class Counterpage extends React.Component {
         }))
        }
        >minus</button>
+       <br/>
+         <Link to="/">Go back to the homepage</Link>
      </div>
    )
   }
