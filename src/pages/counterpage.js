@@ -23,8 +23,6 @@ class Counterpage extends React.Component {
         }))
        }
        >minus</button>
-       <br/>
-         <Link to="/">Go back to the homepage</Link>
      </div>
    )
   }
