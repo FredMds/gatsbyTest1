@@ -1,5 +1,22 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Typography from "typography";
+
+const typography = new Typography({
+  baseFontSize: "22px",
+  baseLineHeight: 1.45,
+  headerFontFamily: [
+    "Avenir Next",
+    "Helvetica Neue",
+    "Segoe UI",
+    "Helvetica",
+    "Arial",
+    "sans-serif",
+  ],
+  bodyFontFamily: ["Georgia", "serif"],
+});
+
+const siteTitle = "Photo Gallery"
 
 const Header = ({ siteTitle }) => (
   <div
@@ -23,9 +40,14 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          Photo Gallery
         </Link>
       </h1>
+
+        <p> <Link to="/counterpage">Counterpage</Link> </p>
+        <p> <Link to="/page-2">Page 2</Link> </p>
+        <p> <Link to="/contact">Me contacter</Link> </p>
+
     </div>
   </div>
 )

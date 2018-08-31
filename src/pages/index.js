@@ -10,6 +10,8 @@ const IndexPage = () => (
       <Link to="/page-2/">Go to page 2</Link>
     <br />
       <Link to="/counterpage/">Go to Counter Page</Link>
+    <br />
+      <Link to="/contact/">Me contacter</Link>
     </div>
     <div>
       <img src="https://source.unsplash.com/random/1200x900" alt=""/>
