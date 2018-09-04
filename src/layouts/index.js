@@ -10,8 +10,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'photo gallery', content: 'premiertest' },
+        { name: 'gatsby netlify', content: 'premiertest, gatsby' },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
