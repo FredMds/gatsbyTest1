@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Typography from "typography";
 
 const typography = new Typography({
-  baseFontSize: "22px",
+  baseFontSize: "18px",
   baseLineHeight: 1.45,
   headerFontFamily: [
     "Avenir Next",
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       background: 'rgb(0, 0, 0)',
-      marginBottom: '1.45rem',
+      marginBottom: '1.35rem',
     }}
   >
     <div
