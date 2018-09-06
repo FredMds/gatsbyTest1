@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
 
 class Counterpage extends React.Component {
   constructor() {
@@ -10,19 +11,19 @@ class Counterpage extends React.Component {
 
     return (
     <div>
-      <Link to="/">Go back to the homepage</Link>
+      {/* <Link to="/">Go back to the homepage</Link> */}
        <h1>Counter</h1>
-       <h1>current count: {this.state.count}</h1>
+       <h3>current count: {this.state.count}</h3>
        <button onClick={() => this.setState(prevState => ({
        count: prevState.count +1,
         }))
        }
-       >plus</button>
+       > + </button>
        <button onClick={() => this.setState(prevState => ({
        count: prevState.count -1,
         }))
        }
-       >minus</button>
+       > - </button>
      </div>
    )
   }

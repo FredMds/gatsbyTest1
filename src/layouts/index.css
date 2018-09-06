@@ -3,9 +3,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -14,7 +16,9 @@ figure,
 footer,
 header,
 main,
-menu,
+#menu {
+  flex-direction: row;
+  },
 nav,
 section,
 summary {
@@ -26,6 +30,11 @@ progress,
 video {
   display: inline-block;
 }
+
+div {
+  margin: 0;
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -38,12 +47,18 @@ template {
   display: none;
 }
 a {
+  color: white;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
+
 a:hover {
-  outline-width: 0;
+    color:#939393;
+    text-decoration:none;
+    cursor:pointer;
+    outline-width: 0;
 }
 abbr[title] {
   border-bottom: none;
@@ -134,12 +149,13 @@ html [type=button] {
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
+  margin: 20px,
 }
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring,
 button:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 3px dotted ButtonText;
 }
 fieldset {
   border: 1px solid silver;
@@ -209,14 +225,12 @@ body {
 }
 img {
   max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
+  margin: 5px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 5px;
 }
 h1 {
   margin-left: 0;
@@ -374,6 +388,18 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+#imagebox {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 90px;
+  height: auto;
+  max-width: auto;
+  overflow-y: hidden;
+  overflow-x:auto;
+}
+
 p {
   margin-left: 0;
   margin-right: 0;
